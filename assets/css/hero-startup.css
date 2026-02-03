@@ -605,6 +605,58 @@ NAVBAR - PURPLE STARTUP THEME
     /* Hidden on desktop by default in this theme logic, handled by media query */
 }
 
+/* 
+=============================================
+TABLET RESPONSIVE NAVBAR (1200px - 992px)
+Fix for navbar items getting cramped at tablet widths
+=============================================
+*/
+@media (max-width: 1200px) and (min-width: 992px) {
+    .main-menu__main-menu-box--two .main-menu__list {
+        gap: 20px !important;
+        /* Reduced gap for tablet */
+    }
+
+    .main-menu__main-menu-box--two .main-menu__list>li>a,
+    .main-menu__main-menu-box--two .main-menu__list>li>a:link,
+    .main-menu__main-menu-box--two .main-menu__list>li>a:visited {
+        font-size: 14px !important;
+        /* Smaller font for tablet */
+    }
+
+    .main-menu__wrapper {
+        padding: 0 20px !important;
+    }
+
+    .hero-startup-btn-nav {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+
+    .main-menu__logo img {
+        max-height: 50px !important;
+    }
+
+    /* CRITICAL: Hide hamburger menu at tablet widths - override notech-responsive.css */
+    .mobile-nav__toggler,
+    .main-menu .mobile-nav__toggler,
+    .main-menu-three .mobile-nav__toggler,
+    .main-menu__main-menu-box--two .mobile-nav__toggler {
+        display: none !important;
+    }
+
+    /* Ensure desktop menu is visible at tablet */
+    .main-menu__list,
+    .main-menu__main-menu-box--two .main-menu__list {
+        display: flex !important;
+    }
+
+    /* Keep the CTA button visible */
+    .main-menu__right-startup {
+        display: flex !important;
+    }
+}
+
 /* Responsive Navbar */
 @media (max-width: 991px) {
     .main-menu__main-menu-box--two {
