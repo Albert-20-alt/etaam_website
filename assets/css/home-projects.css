@@ -1,0 +1,136 @@
+/* 
+=============================================
+PROJECTS SECTION - DARK OVERLAY REDESIGN
+=============================================
+*/
+
+/* Section Background - Deep Space Dark */
+.project-two.project-three {
+    background-color: #151521;
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Section Title - Dark Theme Adaptation */
+.project-two__container .section-title__tagline {
+    color: #2DD4BF !important;
+    /* Teal */
+}
+
+.project-two__container .section-title__title {
+    color: #ffffff;
+}
+
+/* Project Card Container */
+.project-two__single {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: transparent;
+    /* Reset */
+    border: none;
+    /* Reset */
+}
+
+/* Image Container */
+.project-two__img {
+    position: relative;
+    border-radius: 0;
+    /* Reset since parent handles it */
+    overflow: hidden;
+    margin: 0;
+    /* Reset */
+}
+
+.project-two__img img {
+    width: 100%;
+    height: 450px !important;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* Immersive Gradient Overlay */
+.project-two__img:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,
+            rgba(10, 10, 15, 0.95) 0%,
+            rgba(10, 10, 15, 0.6) 40%,
+            rgba(10, 10, 15, 0.0) 100%);
+    z-index: 1;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+}
+
+.project-two__single:hover .project-two__img:before {
+    opacity: 1;
+    /* Darken slightly on hover */
+}
+
+.project-two__single:hover .project-two__img img {
+    transform: scale(1.05);
+}
+
+/* Content Overlay Styling */
+.project-two__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px;
+    z-index: 2;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    transform: none !important;
+    /* Reset existing hover lifts */
+    text-align: left;
+}
+
+/* Subtitle (Category) */
+.project-two__sub-title {
+    color: #2DD4BF !important;
+    /* Brand Teal */
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    opacity: 1;
+}
+
+/* Title */
+.project-two__title {
+    margin-bottom: 5px;
+}
+
+.project-two__title a {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-two__title a:hover {
+    color: #2DD4BF !important;
+}
+
+/* Arrow Button - Repositioned (Optional, hiding for clean look or keeping small) */
+.project-two__arrow {
+    display: none;
+    /* Hiding for the clean "Netflix-style" card look */
+}
+
+/* Optional: Top right badge if needed */
+.project-two__single:after {
+    /* Could add a badge here later */
+}

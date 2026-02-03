@@ -1,0 +1,181 @@
+<?php
+$teamMembers = [
+    'albert-malang-diatta' => [
+        'name' => 'Albert Malang Diatta',
+        'role' => 'Architecture et stratégie des systèmes d’information',
+        'long_role' => 'Architecture et stratégie des systèmes d’information',
+        'image' => 'assets/images/team/team-albert.jpg',
+        'social' => [
+            'twitter' => '#',
+            'linkedin' => '#',
+            'facebook' => '#'
+        ],
+        'quote' => "L'innovation technologique n'a de sens que si elle résout des problèmes concrets pour notre communauté.",
+        'bio_1' => "Co-fondateur d'ETAAM, Albert incarne la vision technique et stratégique de l'entreprise. Fort d'une expertise reconnue, il pilote l'innovation technologique pour répondre aux défis locaux.",
+        'bio_2' => "Son engagement pour le développement technologique en fait un pilier central de l'écosystème numérique sénégalais.",
+        'skills' => [
+            ['name' => 'Architecture Système', 'percent' => '95%'],
+            ['name' => 'Leadership Technique', 'percent' => '90%'],
+            ['name' => 'Cloud Computing', 'percent' => '85%']
+        ],
+        'education' => [
+            [
+                'school' => 'Université Cheikh Anta Diop',
+                'years' => '2012 - 2014',
+                'degree' => 'Master en Informatique, Systèmes Distribués'
+            ],
+            [
+                'school' => 'École Supérieure Polytechnique (ESP)',
+                'years' => '2009 - 2012',
+                'degree' => 'Licence en Génie Logiciel'
+            ]
+        ],
+        'history' => [
+            ['year' => '2024', 'text' => 'Lancement ETAAM Innovation Hub'],
+            ['year' => '2022', 'text' => "Prix de l'Innovation Numérique Casamance"],
+            ['year' => '2018', 'text' => 'Lead Tech sur le projet AgriSénégal']
+        ]
+    ],
+    'hadja-ouleymatou-ndoye' => [
+        'name' => 'Hadja Ouleymatou Ndoye',
+        'role' => 'Communication & Digital Marketing Strategy',
+        'long_role' => 'Communication & Digital Marketing Strategy',
+        'image' => 'assets/images/team/team-hadja.jpg',
+        'social' => [
+            'twitter' => '#',
+            'linkedin' => '#'
+        ],
+        'quote' => "Une communication stratégique est le pont entre l'innovation technologique et son adoption par le public.",
+        'bio_1' => "Hadja pilote la stratégie de communication et le marketing digital d'ETAAM. Elle veille à ce que la vision et les innovations de l'entreprise soient clairement transmises à nos partenaires et bénéficiaires.",
+        'bio_2' => "Son expertise permet de valoriser l'impact des solutions numériques développées par ETAAM.",
+        'skills' => [
+            ['name' => 'Digital Marketing', 'percent' => '98%'],
+            ['name' => 'Communication Stratégique', 'percent' => '95%'],
+            ['name' => 'Branding', 'percent' => '90%']
+        ],
+        'education' => [
+            [
+                'school' => 'ISM Dakar',
+                'years' => '2015 - 2017',
+                'degree' => 'Master en Communication & Marketing Digital'
+            ]
+        ],
+        'history' => [
+            ['year' => '2024', 'text' => "Lancement Campagne Digitale AgriTech"],
+            ['year' => '2021', 'text' => "Responsable Com' Startup Week"]
+        ]
+    ],
+    'vincent-mendy' => [
+        'name' => 'Vincent Mendy',
+        'role' => 'Planification stratégique et évaluation des programmes agricoles',
+        'long_role' => 'Planification stratégique et évaluation des programmes agricoles',
+        'image' => 'assets/images/team/team-vincent.jpg',
+        'social' => [
+            'linkedin' => '#'
+        ],
+        'quote' => "Une planification rigoureuse et une évaluation continue sont les clés d'un développement agricole durable et impactant.",
+        'bio_1' => "Vincent est un expert en planification stratégique agricole. Il conçoit et évalue les programmes d'ETAAM pour s'assurer qu'ils répondent efficacement aux besoins des agriculteurs et des communautés locales.",
+        'bio_2' => "Son approche axée sur les résultats garantit la pérennité et l'évolutivité des initiatives agricoles.",
+        'skills' => [
+            ['name' => 'Planification Stratégique', 'percent' => '96%'],
+            ['name' => 'Évaluation de Projet', 'percent' => '94%'],
+            ['name' => 'Développement Agricole', 'percent' => '92%']
+        ],
+        'education' => [
+            [
+                'school' => 'ENSA Thiès',
+                'years' => '2011 - 2014',
+                'degree' => 'Ingénieur Agronome'
+            ]
+        ],
+        'history' => [
+            ['year' => '2023', 'text' => "Directeur Programme Agri-Innovation"],
+            ['year' => '2019', 'text' => "Consultant FAO Sénégal"]
+        ]
+    ],
+    'antoine-calilou-fall' => [
+        'name' => 'Antoine Calilou Fall',
+        'role' => 'Évaluation de la performance des programmes et gestion des données',
+        'long_role' => 'Évaluation de la performance des programmes et gestion des données',
+        'image' => 'assets/images/team/team-antoine.png',
+        'social' => [
+            'linkedin' => '#'
+        ],
+        'quote' => "Les données sont le carburant de l'efficacité. Une analyse fine de la performance guide l'amélioration continue de nos actions.",
+        'bio_1' => "Antoine est responsable de l'évaluation de la performance. Il collecte et analyse les données des programmes d'ETAAM pour mesurer leur impact réel et orienter les prises de décision stratégiques.",
+        'bio_2' => "Sa rigueur analytique permet à ETAAM d'optimiser ses ressources et de maximiser son impact social.",
+        'skills' => [
+            ['name' => 'Data Analysis', 'percent' => '95%'],
+            ['name' => 'Suivi & Évaluation', 'percent' => '97%'],
+            ['name' => 'Gestion de Données', 'percent' => '93%']
+        ],
+        'education' => [
+            [
+                'school' => 'UGB Saint-Louis',
+                'years' => '2012 - 2015',
+                'degree' => 'Master en Statistique et Informatique Décisionnelle'
+            ]
+        ],
+        'history' => [
+            ['year' => '2023', 'text' => "Certification Data Analyst"],
+            ['year' => '2020', 'text' => "Responsable Suivi-Éval. ONG"]
+        ]
+    ],
+    'charles-auguste-diatta' => [
+        'name' => 'Charles Auguste Diatta',
+        'role' => 'Analyse des données, suivi-évaluation & aide à la décision',
+        'long_role' => 'Analyse des données, suivi-évaluation & aide à la décision',
+        'image' => 'assets/images/team/team-charles.jpg',
+        'social' => [
+            'linkedin' => '#'
+        ],
+        'quote' => "L'analyse de données ne consiste pas seulement à lire des chiffres, mais à entendre l'histoire qu'ils racontent pour mieux agir.",
+        'bio_1' => "Charles Auguste est notre expert en analyse de données et aide à la décision. Il transforme les données complexes en insights exploitables pour optimiser l'impact des projets d'ETAAM.",
+        'bio_2' => "Son travail est essentiel pour garantir que chaque décision prise est fondée sur des preuves tangibles et alignée sur les objectifs de durabilité.",
+        'skills' => [
+            ['name' => 'Data Science', 'percent' => '96%'],
+            ['name' => 'Aide à la Décision', 'percent' => '94%'],
+            ['name' => 'Suivi-Évaluation', 'percent' => '95%']
+        ],
+        'education' => [
+            [
+                'school' => 'UCAD Dakar',
+                'years' => '2013 - 2016',
+                'degree' => 'Master en Mathématiques Appliquées'
+            ]
+        ],
+        'history' => [
+            ['year' => '2024', 'text' => "Publication : 'Big Data & Agriculture'"],
+            ['year' => '2021', 'text' => "Chef de Projet Data Gouv"]
+        ]
+    ],
+    'aissatou-diallo' => [
+        'name' => 'Aissatou Diallo',
+        'role' => 'Ingénieur Réseaux',
+        'long_role' => 'Ingénieur Systèmes & Réseaux',
+        'image' => 'assets/images/team/team-aissatou.png',
+        'social' => [
+            'linkedin' => '#'
+        ],
+        'quote' => "La connectivité est le socle sur lequel repose l'économie numérique.",
+        'bio_1' => "Aissatou conçoit et déploie les infrastructures réseaux robustes qui soutiennent les opérations d'ETAAM et de ses clients. Elle est experte en solutions Cisco et en virtualisation.",
+        'bio_2' => "Elle est également passionnée par l'IoT et le déploiement de réseaux en zones rurales.",
+        'skills' => [
+            ['name' => 'Cisco Networking', 'percent' => '95%'],
+            ['name' => 'Virtualisation (VMware)', 'percent' => '92%'],
+            ['name' => 'Cloud Infrastructure', 'percent' => '88%']
+        ],
+        'education' => [
+            [
+                'school' => 'ESP Dakar',
+                'years' => '2013 - 2015',
+                'degree' => 'DUT Génie Télécom'
+            ]
+        ],
+        'history' => [
+            ['year' => '2024', 'text' => 'Cisco CCNP Enterprise'],
+            ['year' => '2021', 'text' => 'Déploiement réseau Campus Ziguinchor']
+        ]
+    ]
+];
+?>

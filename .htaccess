@@ -1,0 +1,19 @@
+# Prevent directory listing
+Options -Indexes
+
+# Protect Data Files
+<FilesMatch "\.(json)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Protect PHP Includes if needed (optional, but good practice)
+<FilesMatch "^(composer\.json|package\.json|package-lock\.json)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Enable Gzip Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>

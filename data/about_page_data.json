@@ -1,0 +1,56 @@
+{
+    "page_header": {
+        "title": "À Propos de Nous",
+        "background_image": "assets/images/backgrounds/about-header-bg-senegal.png"
+    },
+    "business_from": {
+        "subtitle": "Prêt à Commencer ?",
+        "title": "Lancez Votre Projet avec ETAAM",
+        "button_text": "Contactez-nous",
+        "button_url": "contact.php"
+    },
+    "why_choose_us": {
+        "tagline": "À Propos",
+        "title": "L'Identité ETAAM à Ziguinchor",
+        "main_text": "Ancrée au cœur de la Casamance, ETAAM incarne le dynamisme de Ziguinchor. Nous sommes fiers de contribuer à l'essor technologique de notre région, en formant les talents locaux et en développant des infrastructures numériques de pointe qui connectent le sud du Sénégal au reste du monde.",
+        "points": [
+            {
+                "title": "Fierté Locale",
+                "text": "Un hub d'innovation 100% Ziguinchorois, valorisant le génie de la Casamance.",
+                "icon": "icon-technology"
+            },
+            {
+                "title": "Impact Régional",
+                "text": "Des solutions concrètes pour stimuler l'économie locale et désenclaver la région par le numérique.",
+                "icon": "icon-stock-market"
+            }
+        ],
+        "image": "assets/images/resources/etaam-graphic.png"
+    },
+    "values_section": {
+        "tagline": "Nos Valeurs",
+        "title": "Ce Qui Nous Définit",
+        "values": [
+            {
+                "title": "Innovation",
+                "text": "Nous repoussons les limites technologiques pour offrir des solutions avant-gardistes adaptées à notre région.",
+                "icon": "assets/images/icons/icon-innovation.png"
+            },
+            {
+                "title": "Intégrité",
+                "text": "La transparence et l'honnêteté guident chacune de nos actions et relations professionnelles.",
+                "icon": "assets/images/icons/icon-integrity.png"
+            },
+            {
+                "title": "Excellence",
+                "text": "Nous visons l'excellence dans chaque projet, avec des standards de qualité internationaux.",
+                "icon": "assets/images/icons/icon-excellence.png"
+            },
+            {
+                "title": "Engagement Local",
+                "text": "Nous sommes fiers de contribuer au développement numérique de la Casamance et du Sénégal.",
+                "icon": "assets/images/icons/icon-engagement.png"
+            }
+        ]
+    }
+}

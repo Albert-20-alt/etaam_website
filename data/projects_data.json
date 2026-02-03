@@ -1,0 +1,30 @@
+[
+    {
+        "id": "architecture-cloud",
+        "title": "Architecture Cloud",
+        "subtitle": "Infrastructure",
+        "image": "assets/images/project/etaam-project-1.png",
+        "link": "project-details.php?id=architecture-cloud"
+    },
+    {
+        "id": "audit-conseil",
+        "title": "Audit & Conseil",
+        "subtitle": "Sécurité",
+        "image": "assets/images/project/etaam-project-2.png",
+        "link": "project-details.php?id=audit-conseil"
+    },
+    {
+        "id": "agritech-sud",
+        "title": "App AgriTech du Sud",
+        "subtitle": "Mobile",
+        "image": "assets/images/project/etaam-project-3.png",
+        "link": "project-details.php?id=agritech-sud"
+    },
+    {
+        "id": "bootcamp-casamance",
+        "title": "Bootcamp Casamance",
+        "subtitle": "Formation",
+        "image": "assets/images/project/etaam-project-4.png",
+        "link": "project-details.php?id=bootcamp-casamance"
+    }
+]

@@ -1,0 +1,70 @@
+{
+    "hero_slider": {
+        "slide_1": {
+            "image": "assets\/images\/resources\/hero-slide-1.png",
+            "title": "Transformez votre <span>entreprise<\/span> avec le digital",
+            "text": "ETAAM vous accompagne dans votre transformation numérique au Sénégal et en Afrique de l'Ouest."
+        },
+        "slide_2": {
+            "image": "assets\/images\/resources\/hero-slide-2.png",
+            "title": "Solutions <span>digitales<\/span> innovantes",
+            "text": "Développement web, applications mobiles, et infrastructure cloud pour votre business."
+        },
+        "slide_3": {
+            "image": "assets\/images\/resources\/hero-slide-3.png",
+            "title": "Expertise <span>locale<\/span> vision globale",
+            "text": "Une équipe sénégalaise expérimentée au service de votre réussite numérique."
+        }
+    },
+    "projects": {
+        "project_1": {
+            "title": "Architecture Cloud",
+            "subtitle": "Infrastructure",
+            "image": "assets\/images\/project\/etaam-project-1.png",
+            "link": "project-details.php?id=architecture-cloud"
+        },
+        "project_2": {
+            "title": "Audit & Conseil",
+            "subtitle": "Sécurité",
+            "image": "assets\/images\/project\/etaam-project-2.png",
+            "link": "project-details.php?id=audit-conseil"
+        },
+        "project_3": {
+            "title": "App AgriTech",
+            "subtitle": "Mobile",
+            "image": "assets\/images\/project\/etaam-project-3.png",
+            "link": "project-details.php?id=agritech-sud"
+        },
+        "project_4": {
+            "title": "Bootcamp Casamance",
+            "subtitle": "Formation",
+            "image": "assets\/images\/project\/etaam-project-4.png",
+            "link": "project-details.php?id=bootcamp-casamance"
+        }
+    },
+    "welcome": {
+        "tagline": "QUI SOMMES-NOUS ? ",
+        "title": "ETAAM crée des solutions technologiques sur mesure",
+        "text_1": "Basée à Ziguinchor, ETAAM est votre partenaire technologique pour la transformation digitale. Nous offrons des solutions innovantes adaptées aux besoins des entreprises africaines.",
+        "text_2": "Notre mission est d'accélérer l'innovation en Afrique de l'Ouest. Que ce soit pour la digitalisation de processus, l'analyse de données agricoles ou la formation technique, nous nous engageons à délivrer l'excellence grâce à notre expertise locale.",
+        "image": "assets\/images\/home\/team-group-senegal-v7.jpg"
+    },
+    "consult": {
+        "tagline": "NOTRE EXPERTISE",
+        "title": "Conseil et Solutions Technologiques Sur Mesure",
+        "text": "Nous accompagnons votre transformation numérique avec une approche personnalisée. De l'audit de vos systèmes à l'intégration de solutions complexes, notre équipe d'experts est à vos côtés.",
+        "image": "assets\/images\/resources\/consult-1.png"
+    },
+    "business_from": {
+        "subtitle": "De l'idée à la réalité",
+        "title": "Lancez votre Projet Tech avec ETAAM",
+        "button_text": "Contactez-nous",
+        "button_url": "contact.php"
+    },
+    "notech_more": {
+        "tagline": "POURQUOI NOUS CHOISIR",
+        "title": "ETAAM : Bien plus que de la Tech",
+        "text": "Nous transformons vos défis en opportunités grâce à notre expertise locale et nos standards internationaux. Votre réussite est notre mission.",
+        "image": "assets\/images\/resources\/etaam-collaboration.jpg"
+    }
+}

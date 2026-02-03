@@ -1,0 +1,1672 @@
+/* ETAAM Design Modernization - Custom Overrides */
+
+:root {
+    /* Brand Colors - Extracted from new V Logo */
+    --etaam-violet: #6A4C93;
+    /* Deep Violet */
+    --etaam-turquoise: #00d2d3;
+    /* Bright Turquoise */
+    --etaam-dark: #1a1a2e;
+    /* Deep Dark Blue/Black for backgrounds */
+
+    /* Overriding Notech Variables */
+    --notech-base: var(--etaam-violet);
+    --notech-base-rgb: 106, 76, 147;
+
+    --notech-primary: var(--etaam-turquoise);
+    --notech-primary-rgb: 0, 210, 211;
+
+    --notech-black: #11101d;
+    /* Softer black */
+
+    /* New Solid Colors (Replacing Gradients) */
+    --etaam-gradient: #5841e2;
+    /* Solid Violet */
+    --etaam-gradient-hover: #1a1a2e;
+    /* Solid Navy */
+
+    /* Font Family - Extracted from modern tech design */
+    --notech-font: 'Outfit', sans-serif;
+}
+
+/* =========================================
+   Typography & Layout Modernization
+   ========================================= */
+
+body {
+    line-height: 1.8;
+    /* Improve readability */
+    font-size: 17px;
+    letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    /* Tighter headings for modern look */
+    color: #1a1a2e;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Cleaner Section Spacing */
+section,
+.section-padding {
+    padding: 100px 0 150px 0 !important;
+    /* More breathing room, extra bottom space for services */
+}
+
+.service-three--no-pb {
+    padding-bottom: 50px !important;
+}
+
+/* Navbar Polish */
+.main-menu .main-menu__list>li>a {
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    /* Remove rough uppercase if present */
+    color: #1a1a2e;
+}
+
+.main-menu .main-menu__list>li.current>a,
+.main-menu .main-menu__list>li:hover>a {
+    color: var(--etaam-violet);
+}
+
+/* =========================================
+   UI Component Modernization
+   ========================================= */
+
+/* Forms & Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    background-color: #f8f9fa;
+    border: 1px solid #e9e9ee;
+    border-radius: 8px;
+    /* Softer inputs */
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    background-color: #fff;
+    border-color: var(--etaam-turquoise);
+    box-shadow: 0 0 0 4px rgba(0, 210, 211, 0.1);
+    /* Soft focus ring */
+    outline: none;
+}
+
+/* Footer Improvements */
+.site-footer {
+    background: #0b0a12;
+    position: relative;
+    overflow: hidden;
+}
+
+.site-footer__bottom {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-widget__title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-widget__links-list li a {
+    color: #aaa;
+    transition: all 0.3s ease;
+}
+
+.footer-widget__links-list li a:hover {
+    color: var(--etaam-turquoise);
+    padding-left: 5px;
+}
+
+/* Glassmorphic Cards (Refined) */
+
+/* =========================================
+   Services Section Redesign
+   ========================================= */
+.services-three {
+    background-color: #f9f9fb;
+    /* Clean premium gray */
+    position: relative;
+    z-index: 1;
+}
+
+.services-three__single {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 0;
+    overflow: visible !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    height: 100%;
+    margin-bottom: 30px !important;
+}
+
+.services-three__single:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 210, 211, 0.25);
+    border-color: rgba(0, 210, 211, 0.3);
+}
+
+.services-three__img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-three__img img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.services-three__single:hover .services-three__img img {
+    transform: scale(1.05);
+}
+
+.services-three__content {
+    padding: 30px;
+    position: relative;
+}
+
+.services-three__icon {
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(135deg, #6A4C93 0%, #00d2d3 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 0 !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: 0;
+    transform: none !important;
+    z-index: 10;
+    box-shadow: 0 10px 25px rgba(0, 210, 211, 0.35);
+    transition: all 0.4s ease;
+}
+
+.services-three__single:hover .services-three__icon {
+    transform: scale(1.1) !important;
+    box-shadow: 0 15px 30px rgba(0, 210, 211, 0.5);
+}
+
+.services-three__icon span {
+    font-size: 30px;
+    color: #fff;
+}
+
+.services-three__title a {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    transition: color 0.3s ease;
+}
+
+.services-three__title a:hover {
+    color: var(--etaam-violet);
+}
+
+.services-three__text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.services-three__learn-more a {
+    font-weight: 600;
+    color: var(--etaam-turquoise);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.services-three__learn-more a i {
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.services-three__learn-more a:hover i {
+    margin-left: 10px;
+}
+
+/* Hero Section Premium Dark Background */
+.main-slider-three-bg {
+    background-image: none !important;
+    background-color: #5841e2 !important;
+    /* Solid Vibrant Violet/Blurple to match reference */
+}
+
+.main-slider-three__shape-1 {
+    opacity: 0.3;
+    /* Increased visibility for the tech circle */
+    mix-blend-mode: screen;
+}
+
+.main-slider__content h2 {
+    color: #ffffff;
+    font-size: 72px;
+    /* Increased from 60px */
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.main-slider__content h2 span {
+    color: var(--etaam-turquoise) !important;
+}
+
+.main-slider__content p {
+    color: rgba(255, 255, 255, 0.9);
+    /* Slightly brighter */
+    font-size: 22px;
+    /* Increased from 18px */
+    font-weight: 400;
+    /* Slightly bolder */
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+/* Image Framing - Square Portrait */
+.main-slider-three__img {
+    width: 35%;
+    /* Reduced from 45% */
+    max-width: 450px;
+    /* Reduced from 600px */
+    aspect-ratio: 1 / 1;
+    border-radius: 0;
+    overflow: hidden;
+    right: 5%;
+    top: 50%;
+    /* Start position: Offset to the right (100px) and vertically centered */
+    transform: translate(100px, -50%) !important;
+    bottom: auto;
+    box-shadow: none;
+    opacity: 0;
+    transition: all 1s ease 0.5s;
+    /* Animate all properties including transform */
+}
+
+.swiper-slide-active .main-slider-three__img {
+    opacity: 1 !important;
+    /* End position: original spot (0px on X) and vertically centered */
+    transform: translate(0, -50%) !important;
+    right: 5%;
+}
+
+/* Remove the old shadow image if present or hide it */
+.main-slider-three__shadow {
+    display: none;
+}
+
+/* Hide hero section image as per user request */
+.main-slider-three__img {
+    display: none !important;
+}
+
+.main-slider-three__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    /* Focus on faces */
+}
+
+/* Navbar Transparent/Dark Integration */
+.main-header {
+    background: rgba(11, 10, 18, 0.95);
+    /* Match hero dark tone */
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.main-menu .main-menu__list>li>a {
+    color: #fff !important;
+    /* Ensure nav links are white on dark */
+}
+
+.main-menu .main-menu__list>li:hover>a,
+.main-menu .main-menu__list>li.current>a {
+    color: var(--etaam-turquoise) !important;
+}
+
+/* Logo Swap Logic (Force Light Logo on Dark Header) */
+.main-menu__logo .logo-dark {
+    display: none;
+}
+
+.main-menu__logo .logo-light {
+    display: block;
+}
+
+/* Buttons */
+.thm-btn {
+    background: #5841e2;
+    /* Solid Violet */
+    border-radius: 6px;
+    /* Slightly more professional radius, less pill-like */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: none;
+    font-weight: 600;
+}
+
+.thm-btn:hover {
+    background: #1a1a2e;
+    /* Dark Navy on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #fff;
+}
+
+.thm-btn:after {
+    display: none;
+}
+
+/* Service Boxes / Cards Modernization */
+.services-three__single,
+.project-two__single,
+.megamenu-box__single {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.services-three__single:hover,
+.project-two__single:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(106, 76, 147, 0.15);
+}
+
+/* Section Titles with Solid Text */
+.section-title__title {
+    background: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: initial;
+    color: #1a1a2e;
+    /* Solid Dark Navy */
+    margin-bottom: 20px;
+}
+
+.section-title__tagline {
+    color: var(--etaam-turquoise) !important;
+}
+
+/* Footer Modernization */
+.site-footer {
+    background: #0f0c1a;
+    /* Darker, richer background */
+}
+
+/* Scroll to Top */
+.scroll-to-top {
+    background: var(--etaam-gradient);
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top:hover {
+    transform: translateY(-5px);
+    background: var(--etaam-gradient-hover);
+}
+
+/* Modernize Global Selection */
+::selection {
+    background: var(--etaam-turquoise);
+    color: #1a1a2e;
+}
+
+/* Background Refinements */
+/* Background Refinements */
+body {
+    background-color: #1a1a2e;
+    /* Restore Dark Theme Background */
+    /* background-color: #fcfcfd; - REMOVED Light Override */
+    /* color: #555; - REMOVED to let white text show */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================
+   Business From (Launch) Section Refinement
+   ========================================= */
+.business-from {
+    position: relative;
+    z-index: 1;
+}
+
+.business-from-bg-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Add gradient overlay */
+.business-from-bg-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(106, 76, 147, 0.85) 0%, rgba(26, 26, 46, 0.9) 100%);
+    /* Brand Violet to Dark */
+    z-index: 1;
+}
+
+.business-from-bg {
+    z-index: 0;
+}
+
+.business-from__inner {
+    position: relative;
+    z-index: 5;
+    /* Ensure content sits above overlay */
+}
+
+/* Typography refinements */
+.business-from__sub-title {
+    color: var(--etaam-turquoise);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.business-from__title {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 48px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Responsive adjust */
+@media (max-width: 768px) {
+    .business-from__title {
+        font-size: 32px;
+    }
+}
+
+/* =========================================
+   Service Cards Premium Redesign
+   ========================================= */
+
+
+/* =========================================
+   Service Cards Premium Redesign (Specificity Boosted)
+   ========================================= */
+
+
+/* Wrapper: Glass Effect */
+.services-three .services-three__single.service-card-premium {
+    background: rgba(255, 255, 255, 0.03) !important;
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37) !important;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease !important;
+    overflow: visible !important;
+    margin-bottom: 60px !important;
+    /* Increased spacing between rows */
+}
+
+/* Inner Content: Remove Default White Background */
+.services-three .services-three__single.service-card-premium .services-three__content {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    padding: 40px 30px !important;
+}
+
+.services-three .services-three__single.service-card-premium:hover {
+    transform: translateY(-15px) !important;
+    box-shadow: 0 20px 50px rgba(0, 210, 211, 0.15) !important;
+    /* Turquoise glow */
+    border-color: rgba(0, 210, 211, 0.4) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.services-three .services-three__single.service-card-premium .services-three__title a {
+    color: #ffffff !important;
+    /* White title */
+    font-weight: 700;
+}
+
+.services-three .services-three__single.service-card-premium .services-three__text {
+    color: rgba(255, 255, 255, 0.7) !important;
+    /* Lighter text for contrast on dark */
+    font-weight: 300;
+}
+
+/* Icon Container Glow */
+.services-three .services-three__single.service-card-premium .services-three__icon {
+    background: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+
+    /* Reset Positioning */
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 25px !important;
+    width: 70px !important;
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+}
+
+.services-three .services-three__single.service-card-premium:hover .services-three__icon {
+    background: linear-gradient(135deg, #6A4C93 0%, #00d2d3 100%) !important;
+    box-shadow: 0 0 30px rgba(0, 210, 211, 0.5) !important;
+    transform: scale(1.1) rotate(5deg) !important;
+    border: none !important;
+}
+
+.services-three .services-three__single.service-card-premium .services-three__icon span {
+    font-size: 30px !important;
+    color: #fff !important;
+}
+
+/* Learn More Link */
+.services-three .services-three__single.service-card-premium .services-three__learn-more a {
+    color: var(--etaam-turquoise) !important;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.services-three .services-three__single.service-card-premium .services-three__learn-more a:hover {
+    color: #fff !important;
+    text-shadow: 0 0 10px rgba(0, 210, 211, 0.8);
+    padding-left: 5px;
+}
+
+/* =========================================
+   404 Page Modernization (Dark Premium)
+   ========================================= */
+.body-dark {
+    background-color: #0b0d26;
+    color: #fff;
+}
+
+.body-dark .page-wrapper {
+    background-color: #0b0d26;
+}
+
+.body-dark .error-page {
+    background-color: transparent;
+}
+
+.body-dark .error-page__title {
+    color: #fff;
+    text-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #fff 0%, #aaa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.body-dark .error-page__tagline {
+    color: var(--etaam-turquoise);
+    font-weight: 600;
+}
+
+.body-dark .error-page__text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.body-dark .error-page__form-input input[type="search"] {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.body-dark .error-page__form-input input[type="search"]:focus {
+    border-color: var(--etaam-turquoise);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.body-dark .error-page__form-input button {
+    background-color: var(--etaam-turquoise);
+    color: #fff;
+}
+
+.body-dark .error-page__form-input button:hover {
+    background-color: #fff;
+    color: var(--etaam-turquoise);
+}
+
+.body-dark .error-page__btn {
+    background: var(--etaam-violet);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.body-dark .error-page__btn:hover {
+    background: transparent;
+    border-color: var(--etaam-turquoise);
+    color: var(--etaam-turquoise);
+}
+
+.body-dark .page-header {
+    padding-top: 180px;
+    /* Ensure content clears the fixed header */
+}
+
+/* Style Switcher Dark Themed Redesign */
+.style-switcher {
+    background-color: #0b0d26 !important;
+    /* Dark background matching the theme */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+}
+
+.style-switcher h3 {
+    color: #ffffff !important;
+}
+
+#switcher-toggler {
+    background-color: var(--etaam-violet) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: none;
+}
+
+#switcher-toggler:hover {
+    background-color: var(--etaam-turquoise) !important;
+}
+
+/* =========================================
+   Fixing Invisible Text / White Backgrounds
+   ========================================= */
+/* Dark Backgrounds removed for team-one to allow light theme */
+.consult,
+.notech-more,
+.counter-one,
+.brand-one,
+.delivering-it,
+.contact-page,
+.contact-details,
+.welcome {
+    background-color: #0b0d26 !important;
+    /* Premium Dark Background */
+}
+
+/* Ensure Text Visibility */
+.consult .consult__text,
+.consult .consult__icon-text,
+.consult__text,
+.consult__icon-text,
+.consult__points li .text p,
+.notech-more__text,
+.notech-more__text-2,
+.counter-one__text,
+.contact-details__text,
+.contact-details__content-text,
+.welcome__text-1,
+.welcome__text-2 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+/* Headings on Dark - Fixed Selectors */
+/* Headings on Dark - Fixed Selectors - Removed team-one */
+.consult .section-title__title,
+.notech-more .section-title__title,
+.delivering-it .section-title__title,
+.welcome .section-title__title,
+.consult__title,
+.notech-more__title,
+.counter-one__title,
+.contact-details__title,
+.delivering-it .delivering-it__content-title {
+    color: #fff !important;
+}
+
+.welcome .section-title__tagline {
+    color: #ffffff !important;
+    background: transparent !important;
+}
+
+/* Icons */
+.consult__points li .icon span,
+.notech-more__points li .icon span,
+.contact-details__icon span {
+    color: var(--etaam-turquoise) !important;
+}
+
+.consult__icon {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* =========================================
+   Navigation Menu Layout Refinement
+   ========================================= */
+
+/* Navigation Menu Layout Refinement - DESKTOP ONLY */
+@media (min-width: 1200px) {
+
+    /* 1. Reduce constraints on parent elements */
+    .main-header {
+        padding: 0 40px !important;
+        /* Reduce outer padding (was 80px) */
+    }
+
+    .main-menu__logo {
+        margin-right: 40px !important;
+        /* Reduce massive gap (was 140px) */
+    }
+
+    .main-menu__left {
+        width: 100% !important;
+        /* Ensure the flex container fills the wrapper */
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+
+    /* 2. Ensure the container holding the menu grows to fill space */
+    .main-menu__main-menu-box {
+        flex-grow: 1 !important;
+        width: auto !important;
+        /* Let flex-grow handle it */
+        display: flex !important;
+    }
+
+    /* 3. Ensure the UL takes up that full width */
+    .main-menu .main-menu__list {
+        display: flex !important;
+        align-items: center;
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Increase gap between items per user request */
+    .main-menu .main-menu__list>li+li {
+        margin-left: 60px !important;
+        /* Dynamic Gap */
+    }
+
+    /* Push contact link to the far right end */
+    .main-menu .main-menu__list>li:last-child {
+        margin-left: auto !important;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Style the Contact link as a CTA Button */
+    .main-menu .main-menu__list>li:last-child>a {
+        background-color: #ffffff;
+        color: #0f0f23 !important;
+        /* Deep Navy text for contrast */
+        padding: 12px 30px;
+        border-radius: 50px;
+        /* Pill shape */
+        font-weight: 700 !important;
+        text-transform: none !important;
+        /* Ensure readable case */
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        line-height: 1;
+        /* Reset line height for button */
+        margin-left: 0 !important;
+        /* Reset margin on the A tag itself */
+    }
+
+    /* Remove underline/decoration on hover */
+    .main-menu .main-menu__list>li:last-child>a:hover {
+        background-color: #f0f0f0;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+        color: var(--etaam-turquoise) !important;
+        text-decoration: none !important;
+    }
+
+    /* Disable theme's default underline effect (pseudo-elements) for this button */
+    .main-menu .main-menu__list>li:last-child>a::before,
+    .main-menu .main-menu__list>li:last-child>a::after {
+        display: none !important;
+        content: none !important;
+    }
+
+    /* Explicitly target Sticky Header to ensure consistency */
+    .stricky-header .main-menu__list>li:last-child>a {
+        background-color: #ffffff !important;
+        color: #0f0f23 !important;
+        padding: 12px 30px !important;
+        border-radius: 50px !important;
+        text-transform: none !important;
+        box-shadow: none !important;
+        /* Reset shadow context */
+    }
+
+    /* Sticky header hover state */
+    .stricky-header .main-menu__list>li:last-child>a:hover {
+        background-color: #f0f0f0 !important;
+        color: var(--etaam-turquoise) !important;
+        text-decoration: none !important;
+    }
+}
+
+/* =========================================
+   Mobile Responsiveness Overrides (Premium Beauty)
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    /* 1. Hero Section Transformation */
+    .main-slider-three {
+        height: auto !important;
+        padding-bottom: 80px !important;
+        background-color: #5841e2 !important;
+        /* Solid Brand Violet */
+    }
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 85vh;
+        /* Almost full screen */
+        padding-top: 100px;
+    }
+
+    .main-slider__content {
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .main-slider__content h2 {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+        margin-bottom: 20px;
+    }
+
+    .main-slider__content p {
+        font-size: 16px !important;
+        margin-bottom: 30px;
+    }
+
+    /* Hide the large side image that breaks layout */
+    .main-slider-three__img {
+        display: none !important;
+    }
+
+
+    /* 2. Navigation & Header */
+    .main-header {
+        background: rgba(11, 10, 18, 0.98) !important;
+        /* Nearly solid dark */
+    }
+
+    .mobile-nav__content {
+        background-color: #0f0c1a !important;
+        /* Brand Dark */
+    }
+
+    .mobile-nav__close {
+        color: #fff;
+    }
+
+    .mobile-nav__contact,
+    .mobile-nav__top {
+        border-color: rgba(255, 255, 255, 0.1);
+    }
+
+
+    /* 3. Global Spacing & Typography */
+    section,
+    .section-padding {
+        padding: 60px 0 !important;
+        /* Reduce massive desktop padding */
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* 4. Cards (Services & Projects) */
+    .services-three__single,
+    .project-two__single {
+        margin-bottom: 30px !important;
+        /* Ensure stacking space */
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .services-three__bottom .row {
+        gap: 0;
+        /* Let margin-bottom handle it */
+    }
+
+
+    /* 5. Footer Modernization */
+    .site-footer__top-inner {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .site-footer__top-left {
+        margin-bottom: 30px;
+    }
+
+    .site-footer__middle {
+        text-align: center;
+    }
+
+    .footer-widget__column {
+        margin-bottom: 40px;
+    }
+
+    .footer-widget__contact-list li {
+        justify-content: center;
+    }
+
+    .site-footer__social {
+        justify-content: center;
+    }
+
+    .site-footer__bottom-text {
+        text-align: center !important;
+        font-size: 14px;
+    }
+
+
+    /* 6. Specific Page Fixes */
+
+    /* Welcome Image */
+    .welcome__img-box {
+        padding-right: 0 !important;
+        margin-bottom: 40px;
+    }
+
+    .welcome__text-1,
+    .welcome__text-2 {
+        text-align: center;
+    }
+
+    /* Consult Section */
+    .consult__img {
+        display: none;
+        /* Hide heavy image on mobile */
+    }
+
+    /* Business From (Launch) */
+    .business-from__title {
+        font-size: 28px !important;
+    }
+}
+
+/* =========================================
+   Sidebar Widgets Redesign (Flexible Mode)
+   ========================================= */
+.sidebar__single {
+    background: #1a1a2e !important;
+    /* Force Dark Card Background */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    padding: 30px !important;
+    /* Ensure consistent padding */
+}
+
+.sidebar__title {
+    margin-bottom: 25px !important;
+    position: relative;
+    padding-bottom: 10px;
+    /* Removed color: #fff force */
+}
+
+.sidebar__title::before {
+    background-color: var(--etaam-turquoise) !important;
+}
+
+/* Specific Fix for Broken Comments Widget */
+.sidebar__comments {
+    background: transparent !important;
+    padding: 0 !important;
+    /* Reset padding as it's handled by sidebar__single now */
+}
+
+.sidebar__comments-list li {
+    padding-left: 65px !important;
+    position: relative;
+    border-bottom: 1px solid var(--notech-bdr-color);
+    /* Use variable border color */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__comments-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sidebar__comments-icon {
+    width: 45px !important;
+    height: 45px !important;
+    border: 1px solid var(--notech-bdr-color) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    transition: all 0.3s ease !important;
+    /* Removed background/color force */
+}
+
+.sidebar__comments-list li:hover .sidebar__comments-icon {
+    background-color: var(--etaam-turquoise) !important;
+    border-color: var(--etaam-turquoise) !important;
+    color: #fff !important;
+    transform: rotate(15deg);
+}
+
+.sidebar__comments-text-box h5 {
+    color: var(--etaam-turquoise) !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    margin: 5px 0 0 !important;
+    line-height: 1.4 !important;
+}
+
+.sidebar__comments-text-box p {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    color: var(--notech-gray) !important;
+    /* Use variable */
+}
+
+.sidebar__comments-text-box p span {
+    font-weight: 600 !important;
+    /* Inherit or let theme handle color */
+}
+
+/* Search Widget */
+.sidebar__search-form input[type="search"] {
+    border-radius: 10px !important;
+    /* Removed background force */
+}
+
+.sidebar__search-form input[type="search"]:focus {
+    border-color: var(--etaam-turquoise) !important;
+}
+
+.sidebar__search-form button:hover {
+    color: var(--etaam-turquoise) !important;
+}
+
+/* Category & Post Lists */
+.sidebar__category-list li a,
+.sidebar__post-content h3 a {
+    transition: all 0.3s ease;
+    /* Removed color force */
+}
+
+.sidebar__category-list li a:hover,
+.sidebar__post-content h3 a:hover,
+.sidebar__category-list li.active a {
+    color: var(--etaam-turquoise) !important;
+}
+
+.sidebar__post-content-meta {
+    color: var(--notech-gray) !important;
+}
+
+/* Tags */
+.sidebar__tags-list a {
+    border: 1px solid var(--notech-bdr-color) !important;
+    /* Removed background/color force */
+}
+
+.sidebar__tags-list a:hover {
+    background: var(--etaam-turquoise) !important;
+    color: #fff !important;
+    border-color: var(--etaam-turquoise) !important;
+}
+
+.sidebar__title {
+    color: #fff !important;
+    margin-bottom: 25px !important;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.sidebar__title::before {
+    background-color: var(--etaam-turquoise) !important;
+}
+
+/* Specific Fix for Broken Comments Widget */
+.sidebar__comments {
+    background: transparent !important;
+    padding: 0 !important;
+    /* Reset padding as it's handled by sidebar__single now */
+}
+
+.sidebar__comments-list li {
+    padding-left: 65px !important;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar__comments-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.sidebar__comments-icon {
+    width: 45px !important;
+    height: 45px !important;
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    transition: all 0.3s ease !important;
+}
+
+.sidebar__comments-list li:hover .sidebar__comments-icon {
+    background-color: var(--etaam-turquoise) !important;
+    border-color: var(--etaam-turquoise) !important;
+    transform: rotate(15deg);
+}
+
+.sidebar__comments-text-box h5 {
+    color: var(--etaam-turquoise) !important;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    margin: 5px 0 0 !important;
+    line-height: 1.4 !important;
+}
+
+.sidebar__comments-text-box p {
+    color: rgba(255, 255, 255, 0.6) !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+}
+
+.sidebar__comments-text-box p span {
+    color: #fff !important;
+    font-weight: 600 !important;
+}
+
+/* Search Widget */
+.sidebar__search-form input[type="search"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    border-radius: 10px !important;
+}
+
+.sidebar__search-form input[type="search"]:focus {
+    border-color: var(--etaam-turquoise) !important;
+}
+
+.sidebar__search-form button {
+    color: #fff !important;
+}
+
+.sidebar__search-form button:hover {
+    color: var(--etaam-turquoise) !important;
+}
+
+/* Category & Post Lists */
+.sidebar__category-list li a,
+.sidebar__post-content h3 a {
+    color: rgba(255, 255, 255, 0.7) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    /* Fix White Background Issue */
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    /* Add subtle border */
+    border-radius: 10px !important;
+    /* Rounded corners */
+    padding: 10px 15px !important;
+    /* Spacing */
+    margin-bottom: 10px !important;
+    /* Spacing */
+    display: block !important;
+    /* Ensure block layout */
+    transition: all 0.3s ease;
+}
+
+.sidebar__category-list li a:hover,
+.sidebar__post-content h3 a:hover,
+.sidebar__category-list li.active a {
+    color: #fff !important;
+    background: var(--etaam-turquoise) !important;
+    border-color: var(--etaam-turquoise) !important;
+}
+
+.sidebar__post-content-meta {
+    color: rgba(255, 255, 255, 0.4) !important;
+}
+
+/* Tags */
+.sidebar__tags-list a {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar__tags-list a:hover {
+    background: var(--etaam-turquoise) !important;
+    color: #fff !important;
+    border-color: var(--etaam-turquoise) !important;
+}
+
+/* =========================================
+   Premium Project Card (Force Dark Theme)
+   ========================================= */
+.project-card-premium {
+    background: #1a1a2e !important;
+    /* Fallback */
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.9), rgba(15, 15, 35, 0.95)) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.project-card-premium:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(106, 76, 147, 0.2);
+    /* Violet glow */
+    border-color: var(--etaam-turquoise) !important;
+}
+
+.project-card-premium .blog-sidebar__content-box {
+    background: transparent !important;
+}
+
+.project-card-premium .blog-sidebar__title a {
+    color: #fff !important;
+    /* Force white title */
+    transition: color 0.3s ease;
+}
+
+.project-card-premium:hover .blog-sidebar__title a {
+    color: var(--etaam-turquoise) !important;
+}
+
+.project-card-premium .blog-sidebar__text {
+    color: rgba(255, 255, 255, 0.7) !important;
+    /* Force light gray text */
+}
+
+.project-card-premium .blog-sidebar__meta a {
+    color: rgba(255, 255, 255, 0.6) !important;
+    transition: color 0.3s ease;
+}
+
+.project-card-premium .blog-sidebar__meta a:hover {
+    color: #fff !important;
+}
+
+.project-card-premium .blog-sidebar__meta i {
+    color: var(--etaam-turquoise) !important;
+}
+
+.project-card-premium .blog-sidebar__read-more {
+    color: #fff !important;
+    position: relative;
+    padding-left: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card-premium .blog-sidebar__read-more:hover {
+    color: var(--etaam-turquoise) !important;
+    letter-spacing: 2px !important;
+}
+
+/* Ensure images have nice rounded corners if not full width */
+.project-card-premium .blog-sidebar__img img {
+    transition: transform 0.5s ease;
+}
+
+.project-card-premium:hover .blog-sidebar__img img {
+    transform: scale(1.05);
+}
+
+/* =========================================
+   Mobile Responsiveness Overrides (Revised Premium Beauty)
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    /* 1. Hero Section Transformation */
+    /* 1. Hero Section Transformation */
+    .main-slider-three {
+        padding-bottom: 60px !important;
+        background: transparent !important;
+        /* Removed direct background */
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    /* Gradient Overlay (Index -2: On top of images, behind content) */
+    .main-slider-three::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, rgba(88, 65, 226, 0.85) 0%, rgba(26, 26, 46, 0.9) 100%) !important;
+        z-index: -2;
+    }
+
+    /* Texture (Index -1: On top of overlay) */
+    .main-slider-three::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/shapes/main-slider-three-shape-1.png');
+        background-size: cover;
+        opacity: 0.1;
+        z-index: -1;
+    }
+
+    /* Background Slider Container (Index -3: Bottom) */
+    .mobile-bg-slider {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -3;
+    }
+
+    /* Slider Images */
+    .mobile-bg-slider span {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        animation: bgSlide 15s linear infinite;
+    }
+
+    /* Animation Delays for 3 images */
+    .mobile-bg-slider span:nth-child(1) {
+        animation-delay: 0s;
+    }
+
+    .mobile-bg-slider span:nth-child(2) {
+        animation-delay: 5s;
+    }
+
+    .mobile-bg-slider span:nth-child(3) {
+        animation-delay: 10s;
+    }
+
+    /* Keyframes for Fading */
+    @keyframes bgSlide {
+        0% {
+            opacity: 0;
+            transform: scale(1);
+        }
+
+        5% {
+            opacity: 1;
+        }
+
+        33% {
+            opacity: 1;
+        }
+
+        38% {
+            opacity: 0;
+            transform: scale(1.1);
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    .swiper-slide {
+        min-height: auto !important;
+        /* Let content dictate height */
+        padding: 120px 0 60px 0 !important;
+        /* More top padding for navbar */
+    }
+
+    .main-slider__content {
+        text-align: center;
+        padding: 0 15px;
+        /* Increase side padding */
+    }
+
+    .main-slider__content h2 {
+        font-size: 48px !important;
+        /* Increased from 32px to 48px */
+        line-height: 1.1 !important;
+        margin-bottom: 25px;
+        letter-spacing: -1.5px;
+    }
+
+    .main-slider__content p {
+        font-size: 19px !important;
+        /* Increased from 16px to 19px */
+        line-height: 1.6;
+        margin-bottom: 35px;
+        padding: 0 5px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.95);
+    }
+
+    /* 2. Navigation & Header */
+    .main-header {
+        background: rgba(11, 10, 18, 0.98) !important;
+    }
+
+    /* 2. Global Spacing & Typography */
+    section,
+    .section-padding {
+        padding: 60px 0 !important;
+        /* Slightly more breathing room */
+    }
+
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .section-title__title {
+        font-size: 34px !important;
+        /* Increased from 28px */
+        line-height: 1.3 !important;
+    }
+
+    /* 3. Services / Cards */
+    .services-three__single,
+    .project-two__single {
+        margin-bottom: 25px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .services-three__content {
+        padding: 25px 20px !important;
+    }
+
+    /* 4. Footer */
+    .site-footer__top-inner {
+        padding: 40px 20px !important;
+    }
+
+    .footer-widget__column {
+        margin-bottom: 30px;
+    }
+
+    /* 5. Business Launch Section */
+    .business-from__title {
+        font-size: 26px !important;
+        padding: 0 10px;
+    }
+
+    /* 6. Mobile Menu Polish */
+    .mobile-nav__content {
+        background-color: #0f0c1a !important;
+        /* Ensure brand match */
+    }
+
+    .mobile-nav__container .main-menu__list>li>a {
+        color: #fff !important;
+        border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+    }
+
+    /* 7. Welcome/Consult Images */
+    .welcome__img-box,
+    .consult__img {
+        display: none !important;
+        /* Hide bulky images */
+    }
+
+    .welcome__right,
+    .consult__left {
+        margin-top: 0 !important;
+        text-align: center;
+    }
+
+    .welcome__text-1,
+    .welcome__text-2 {
+        color: rgba(255, 255, 255, 0.8) !important;
+        font-size: 15px !important;
+        line-height: 1.8 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .consult__icon-box {
+        justify-content: center;
+    }
+
+    .consult__points li {
+        justify-content: center;
+        /* Center list items if flex */
+        text-align: left;
+        /* Keep text aligned properly */
+    }
+}
+
+/* GLOBAL FIXES (Desktop & Mobile) */
+.welcome__text-1,
+.welcome__text-2 {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 400;
+}
+
+/* =========================================
+   Team Section Dark Theme & Visibility
+   ========================================= */
+.team-page,
+.team-one.about-page-team {
+    background-color: #0b0d26 !important;
+    /* Premium Dark Navy */
+}
+
+/* Tagline - Cyan for pop on dark */
+.team-page .section-title__tagline,
+.team-one.about-page-team .section-title__tagline {
+    color: var(--etaam-turquoise) !important;
+}
+
+/* Title - White on dark */
+.team-page .section-title__title,
+.team-one.about-page-team .section-title__title {
+    color: #ffffff !important;
+}
+
+/* Card Content - Dark Card Background */
+.team-one__content {
+    background-color: #15161b !important;
+    /* Dark Card BG */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.team-one__name a {
+    color: #ffffff !important;
+    /* White Name */
+}
+
+.team-one__title {
+    color: #686470 !important;
+    /* Gray Role */
+}
+
+/* Forum Button Hover Override */
+.thm-btn.forum-btn-accent:hover {
+    background: linear-gradient(135deg, #8B5CF6 0%, #6A4C93 100%) !important;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(106, 76, 147, 0.4);
+    color: #fff !important;
+}

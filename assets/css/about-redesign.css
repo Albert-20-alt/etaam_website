@@ -1,0 +1,237 @@
+/* About Page Redesign - Modern Glassmorphism Cards */
+
+.delivering-it__single {
+    position: relative;
+    border-radius: 20px;
+    /* Rounded corners for the container */
+    overflow: hidden;
+    margin-bottom: 30px;
+    background: transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    transition: all 0.4s ease;
+}
+
+.delivering-it__single:hover {
+    transform: translateY(-10px);
+    /* Enhanced lift on hover */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.delivering-it__img {
+    position: relative;
+    border-radius: 20px;
+    /* Match container radius */
+    overflow: hidden;
+    margin: 0;
+    background: #000;
+}
+
+.delivering-it__img img {
+    width: 100%;
+    height: 400px;
+    /* Keep fixed height */
+    object-fit: cover;
+    display: block;
+    opacity: 0.9;
+    transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+.delivering-it__single:hover .delivering-it__img img {
+    opacity: 1;
+    transform: scale(1.05);
+    /* Subtle zoom effect */
+}
+
+/* Glassmorphism Content Box */
+.delivering-it__content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+
+    /* Glass Effect */
+    background: rgba(26, 27, 46, 0.75);
+    /* Semi-transparent dark blue */
+    backdrop-filter: blur(12px);
+    /* Blur the background image behind */
+    -webkit-backdrop-filter: blur(12px);
+    /* Safari support */
+
+    padding: 24px 20px;
+    border-radius: 16px;
+    /* Slightly smaller radius than container */
+    text-align: center;
+
+    /* Border and Shadow for Glass pop */
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+    margin: 0 !important;
+}
+
+.delivering-it__content-title {
+    color: #ffffff;
+    font-size: 18px;
+    /* Slightly larger text */
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.4;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    font-family: 'Outfit', sans-serif;
+    /* Ensure modern font is used if loaded */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure container has proper spacing */
+.delivering-it-two {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .delivering-it__single {
+        margin-bottom: 40px;
+    }
+
+    .delivering-it__img img {
+        height: 350px;
+        /* Slightly shorter on tablets */
+    }
+
+    .delivering-it__content {
+        padding: 20px 15px;
+    }
+
+    .delivering-it__content-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .delivering-it-two {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .delivering-it__single {
+        margin-bottom: 30px;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .delivering-it__img img {
+        height: 300px;
+        /* Even shorter on mobile */
+    }
+
+    .delivering-it__content {
+        bottom: 15px;
+        left: 15px;
+        right: 15px;
+        padding: 15px;
+        background: rgba(26, 27, 46, 0.85);
+        /* Slightly more opaque for readability */
+    }
+
+    .delivering-it__content-title {
+        font-size: 16px;
+    }
+}
+
+/* Standardize Team Photo Sizes */
+.team-one__img img {
+    height: 500px !important;
+    width: 100%;
+    object-fit: cover;
+    object-position: center top;
+    /* Focus on faces */
+}
+
+/* Why Choose Us Section - Background Upgrade */
+.notech-more {
+    background: linear-gradient(to right bottom, #0f0c15, #1a1b3a) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* CTA Section Premium Redesign */
+.business-from-bg-box {
+    background: linear-gradient(135deg, rgba(45, 10, 80, 0.95) 0%, rgba(10, 10, 30, 0.98) 100%) !important;
+    mix-blend-mode: normal !important;
+    /* Override luminosity to show colors */
+}
+
+/* Ensure the background image is still visible but blended */
+.business-from-bg {
+    opacity: 0.4 !important;
+    mix-blend-mode: overlay !important;
+}
+
+.business-from__sub-title {
+    color: #2be4ac !important;
+    /* Bright teal */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(43, 228, 172, 0.4);
+}
+
+.business-from__title {
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background: -webkit-linear-gradient(#ffffff, #e0e0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glow Button */
+.business-from__btn {
+    background: #2DD4BF !important;
+    /* Brand Teal (Logo Color) */
+    border: none;
+    color: #1b1525 !important;
+    /* Dark text for contrast */
+    font-weight: 700;
+    box-shadow: 0 0 20px rgba(45, 212, 191, 0.4);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+/* Team Section Typography - Professional Look */
+.team-one .section-title__tagline {
+    color: #2DD4BF !important;
+    /* Brand Teal */
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.team-one .section-title__title {
+    /* color: #ffffff !important; REMOVED to allow dark text on white background */
+    font-size: 42px;
+    font-weight: 800;
+    /* Extra Bold */
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    margin-top: 0;
+}
+
+/* Hide the default shape for a cleaner look if desired, or style it */
+.team-one .section-title-shape {
+    display: none;
+}
+
+.business-from__btn:before {
+    display: none;
+    /* Remove gradient overlay to keep solid green */
+}

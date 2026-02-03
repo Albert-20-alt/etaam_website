@@ -1,0 +1,43 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local database
+*.sqlite
+etaam_db.sqlite
+
+# Temporary/Debug files
+cookies.txt
+debug_*.php
+update_icon*.php
+migrate_*.php
+list_projects.php
+add_permissions_column.php
+sync_about_db.php
+reset_password.php
+update_projects_schema.php
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dependencies (if any)
+node_modules/
+vendor/
+
+# Deployment zip (keep separate)
+*.zip
+
+# Tests
+tests/
+
+# Environment files
+.env
+.env.local

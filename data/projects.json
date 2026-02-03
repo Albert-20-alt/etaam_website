@@ -1,0 +1,229 @@
+[
+    {
+        "id": "architecture-cloud",
+        "title": "Architecture Cloud",
+        "subtitle": "Infrastructure",
+        "category": "Infrastructure Cloud",
+        "client": "Banque Panafricaine",
+        "location": "Dakar, Sénégal",
+        "duration": "6 mois",
+        "image": "assets\/images\/project\/etaam-project-1.png",
+        "hero_image": "assets\/images\/project\/etaam-project-1.png",
+        "link": "project-details.php?id=architecture-cloud",
+        "description_title": "Transformation Numérique Sécurisée",
+        "description": "\n            <p style=\"color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px; margin-bottom: 20px;\">\n                Nous avons conçu et déployé une infrastructure cloud hybride résiliente pour une institution financière majeure. \n                Ce projet visait à garantir une haute disponibilité des services bancaires critiques tout en assurant une conformité stricte aux normes de sécurité internationales (PCI-DSS).\n            <\/p>\n            <p style=\"color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px;\">\n                La solution a permis de réduire les coûts opérationnels de 30% et d'améliorer la vitesse de déploiement des nouvelles applications.\n            <\/p>",
+        "challenge": "Le défi principal résidait dans la migration sans interruption de service d'un système bancaire actif 24\/7, tout en intégrant des protocoles de sécurité avancés pour protéger les données sensibles des clients.",
+        "deliverables": [
+            {
+                "icon": "fas fa-cloud",
+                "title": "Cloud Hybride",
+                "text": "Architecture AWS + On-Premise"
+            },
+            {
+                "icon": "fas fa-shield-alt",
+                "title": "Sécurité Avancée",
+                "text": "Chiffrement de bout en bout"
+            },
+            {
+                "icon": "fas fa-server",
+                "title": "Haute Disponibilité",
+                "text": "Redondance multi-zone"
+            },
+            {
+                "icon": "fas fa-rocket",
+                "title": "DevOps",
+                "text": "Pipelines CI\/CD automatisés"
+            }
+        ],
+        "process_image": "assets\/images\/project\/etaam-project-1.png",
+        "results": [
+            {
+                "value": "99.99%",
+                "label": "Uptime"
+            },
+            {
+                "value": "-30%",
+                "label": "Coûts Opérationnels"
+            },
+            {
+                "value": "2X",
+                "label": "Performance"
+            }
+        ],
+        "impact": [
+            "Sécurité des transactions renforcée",
+            "Expérience client fluide et rapide",
+            "Scalabilité pour les pics de charge"
+        ]
+    },
+    {
+        "id": "audit-conseil",
+        "title": "Audit & Conseil",
+        "subtitle": "Projet",
+        "category": "Cybersécurité",
+        "client": "Opérateur Télécom",
+        "location": "Abidjan, Côte d'Ivoire",
+        "duration": "3 mois",
+        "image": "assets\/images\/project\/etaam-project-2.png",
+        "hero_image": "assets\/images\/project\/etaam-project-2.png",
+        "link": "project-details.php?id=audit-conseil",
+        "description": "\n            <p style=\"color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px; margin-bottom: 20px;\">\n                ETAAM a mené un audit exhaustif des systèmes d'information d'un grand opérateur. \n                Notre intervention a couvert les tests d'intrusion, l'analyse de code et la revue des politiques de sécurité.\n            <\/p>",
+        "challenge": "Identifier les vulnérabilités critiques dans un environnement complexe et hétérogène sans impacter les opérations commerciales en cours.",
+        "deliverables": [
+            {
+                "icon": "fas fa-search",
+                "title": "Pentesting",
+                "text": "Tests d'intrusion avancés"
+            },
+            {
+                "icon": "fas fa-file-contract",
+                "title": "Mise en Conformité",
+                "text": "Alignement ISO 27001"
+            },
+            {
+                "icon": "fas fa-user-shield",
+                "title": "Formation",
+                "text": "Sensibilisation des équipes"
+            },
+            {
+                "icon": "fas fa-lock",
+                "title": "Hardening",
+                "text": "Durcissement des configurations"
+            }
+        ],
+        "results": [
+            {
+                "value": "45+",
+                "label": "Failles Corrigées"
+            },
+            {
+                "value": "0",
+                "label": "Incident Majeur"
+            },
+            {
+                "value": "100%",
+                "label": "Conformité"
+            }
+        ],
+        "impact": [
+            "Protection des données abonnés",
+            "Confiance des partenaires restaurée",
+            "Culture de sécurité renforcée"
+        ],
+        "description_title": "Renforcement de la Posture de Sécurité"
+    },
+    {
+        "id": "agritech-sud",
+        "title": "App AgriTech du Sud",
+        "subtitle": "Mobile",
+        "category": "Développement Mobile",
+        "client": "Coopérative Agricole",
+        "location": "Ziguinchor, Sénégal",
+        "duration": "4 mois",
+        "image": "assets\/images\/project\/etaam-project-3.png",
+        "hero_image": "assets\/images\/project\/etaam-project-3.png",
+        "link": "project-details.php?id=agritech-sud",
+        "description_title": "Digitalisation de l'Agriculture",
+        "description": "\n            <p style=\"color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px; margin-bottom: 20px;\">\n                Une application mobile intuitive conçue pour aider les agriculteurs locaux à gérer leurs cultures, \n                suivre les prix du marché et accéder à des conseils météorologiques en temps réel.\n            <\/p>",
+        "challenge": "Créer une interface utilisateur accessible pour des utilisateurs peu familiers avec la technologie, fonctionnant parfaitement dans des zones à faible connectivité internet.",
+        "deliverables": [
+            {
+                "icon": "fas fa-mobile",
+                "title": "App Android",
+                "text": "Mode hors-ligne complet"
+            },
+            {
+                "icon": "fas fa-database",
+                "title": "Data",
+                "text": "Suivi des récoltes"
+            },
+            {
+                "icon": "fas fa-cloud-sun",
+                "title": "Météo",
+                "text": "Alertes temps réel"
+            },
+            {
+                "icon": "fas fa-chart-line",
+                "title": "Marché",
+                "text": "Prix des denrées"
+            }
+        ],
+        "process_image": "assets\/images\/project\/etaam-project-3.png",
+        "results": [
+            {
+                "value": "500+",
+                "label": "Agriculteurs Actifs"
+            },
+            {
+                "value": "+25%",
+                "label": "Revenus Moyens"
+            },
+            {
+                "value": "4.8\/5",
+                "label": "Note Play Store"
+            }
+        ],
+        "impact": [
+            "Réduction des pertes post-récolte",
+            "Meilleure négociation des prix",
+            "Accès simplifié au financement"
+        ]
+    },
+    {
+        "id": "bootcamp-casamance",
+        "title": "Bootcamp Casamance",
+        "subtitle": "Formation",
+        "category": "Bootcamp Tech",
+        "client": "Jeunesse de Casamance",
+        "location": "Ziguinchor, Sénégal",
+        "duration": "3 mois intensif",
+        "image": "assets\/images\/project\/etaam-project-4.png",
+        "hero_image": "assets\/images\/project\/bootcamp-casamance-hero.png",
+        "link": "project-details.php?id=bootcamp-casamance",
+        "description_title": "Former les talents de demain",
+        "description": "\n            <p style=\"color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px; margin-bottom: 20px;\">\n                ETAAM a lancé le premier bootcamp technologique intensif en Casamance pour former la\n                jeunesse locale aux métiers du numérique. Ce programme de 3 mois a réuni <strong\n                    style=\"color: #8B5CF6;\">25 jeunes passionnés<\/strong> de Ziguinchor, Kolda et\n                Sédhiou pour une formation intensive en développement web, mobile et design UI\/UX.\n            <\/p>\n            <p style=\"color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px;\">\n                Notre objectif était de créer un vivier de talents tech local, capable de répondre aux\n                besoins des entreprises de la région et de lancer leurs propres projets\n                entrepreneuriaux. Le bootcamp combinait théorie et pratique avec des projets réels pour\n                des clients locaux.\n            <\/p>",
+        "challenge": "Le principal défi était de proposer une formation de qualité internationale dans un contexte de ressources limitées. Nous devions adapter notre pédagogie aux réalités locales : connexion internet parfois instable, diversité des niveaux de départ des participants, et nécessité de rendre la formation accessible financièrement.",
+        "deliverables": [
+            {
+                "icon": "fas fa-code",
+                "title": "Développement Web",
+                "text": "HTML, CSS, JS, React"
+            },
+            {
+                "icon": "fas fa-mobile-alt",
+                "title": "Mobile avec Flutter",
+                "text": "Apps cross-platform"
+            },
+            {
+                "icon": "fas fa-project-diagram",
+                "title": "Projets Réels",
+                "text": "Pour entreprises locales"
+            },
+            {
+                "icon": "fas fa-user-tie",
+                "title": "Mentorat",
+                "text": "Insertion pro"
+            }
+        ],
+        "process_image": "assets\/images\/project\/bootcamp-workshop.png",
+        "results": [
+            {
+                "value": "25",
+                "label": "Développeurs formés"
+            },
+            {
+                "value": "72%",
+                "label": "Taux d'insertion"
+            },
+            {
+                "value": "3",
+                "label": "Startups créées"
+            }
+        ],
+        "impact": [
+            "App gestion agricole utilisée par 200+ exploitants",
+            "2ème cohorte lancée",
+            "Extension à Kolda et Sédhiou"
+        ]
+    }
+]

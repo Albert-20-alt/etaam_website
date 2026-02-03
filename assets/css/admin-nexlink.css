@@ -1,0 +1,337 @@
+/* Admin Dashboard Redesign - NexLink Inspiration */
+:root {
+    /* Core Layout */
+    --admin-sidebar-width: 280px;
+    --admin-header-height: 80px;
+
+    /* Colors - Dark Theme (ETAAM Consistent) */
+    --admin-bg: #0f1014;
+    --admin-card-bg: #1a1b21;
+    --admin-border-color: rgba(255, 255, 255, 0.08);
+    --admin-text-main: #ffffff;
+    --admin-text-muted: rgba(255, 255, 255, 0.5);
+
+    /* Brand Colors */
+    --brand-primary: #3B82F6;
+    /* Blue like NexLink/ETAAM mix */
+    --brand-success: #10B981;
+    --brand-warning: #F59E0B;
+    --brand-danger: #EF4444;
+    --brand-purple: #8B5CF6;
+}
+
+/* --- Global & Layout --- */
+body {
+    background-color: var(--admin-bg);
+    color: var(--admin-text-main);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.dashboard-container {
+    padding: 30px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* --- Cards --- */
+.nex-card {
+    background: var(--admin-card-bg);
+    border-radius: 20px;
+    padding: 25px;
+    border: 1px solid var(--admin-border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+/* --- Header Section --- */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.search-bar {
+    position: relative;
+    width: 400px;
+}
+
+.search-bar input {
+    width: 100%;
+    background: var(--admin-card-bg);
+    border: 1px solid var(--admin-border-color);
+    border-radius: 12px;
+    padding: 12px 20px 12px 45px;
+    color: white;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.search-bar input:focus {
+    border-color: var(--brand-primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.search-bar i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--admin-text-muted);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    border: 1px solid var(--admin-border-color);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--admin-text-main);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.icon-btn:hover {
+    background: var(--admin-card-bg);
+    border-color: var(--brand-primary);
+    color: var(--brand-primary);
+}
+
+/* --- Stats Row --- */
+.stats-grid-nex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.stat-card-nex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.stat-icon.green {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--brand-success);
+}
+
+.stat-icon.red {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--brand-danger);
+}
+
+.stat-icon.purple {
+    background: rgba(139, 92, 246, 0.1);
+    color: var(--brand-purple);
+}
+
+.stat-icon.orange {
+    background: rgba(245, 158, 11, 0.1);
+    color: var(--brand-warning);
+}
+
+.stat-content h3 {
+    font-size: 14px;
+    color: var(--admin-text-muted);
+    font-weight: 500;
+    margin: 0 0 5px 0;
+}
+
+.stat-content .value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* --- Charts Section --- */
+.charts-grid-nex {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+    .charts-grid-nex {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card-header-nex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card-title-nex {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.chart-select {
+    background: transparent;
+    border: 1px solid var(--admin-border-color);
+    color: var(--admin-text-muted);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* --- Gauge / Target Card --- */
+.target-card {
+    background: linear-gradient(135deg, #6A4C93 0%, #3B82F6 100%);
+    border: none;
+    position: relative;
+    overflow: hidden;
+}
+
+.target-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle at top right, rgba(255, 255, 255, 0.1) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.target-circle-bg {
+    width: 200px;
+    height: 100px;
+    /* half circle */
+    border-radius: 100px 100px 0 0;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.target-circle-prog {
+    width: 180px;
+    height: 90px;
+    border-radius: 90px 90px 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+
+/* --- Table Section --- */
+.table-header-nex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    /* Space between rows */
+}
+
+.modern-table thead th {
+    color: var(--admin-text-muted);
+    font-weight: 500;
+    font-size: 13px;
+    padding: 0 20px 10px;
+    text-align: left;
+}
+
+.modern-table tbody tr {
+    background: transparent;
+    transition: transform 0.2s;
+}
+
+.modern-table tbody tr:hover {
+    transform: translateX(5px);
+}
+
+.modern-table td {
+    background: rgba(255, 255, 255, 0.02);
+    /* Subtle row row bg */
+    padding: 15px 20px;
+    border-top: 1px solid var(--admin-border-color);
+    border-bottom: 1px solid var(--admin-border-color);
+}
+
+.modern-table td:first-child {
+    border-left: 1px solid var(--admin-border-color);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.modern-table td:last-child {
+    border-right: 1px solid var(--admin-border-color);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar-sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #2d3748;
+    background-size: cover;
+}
+
+/* --- Sidebar Extra --- */
+.upgrade-card {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    margin-top: auto;
+    /* Push to bottom */
+    text-align: center;
+}
+
+.upgrade-btn {
+    background: var(--brand-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 0;
+    width: 100%;
+    font-weight: 600;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.upgrade-btn:hover {
+    background: #2563EB;
+}

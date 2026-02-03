@@ -1,0 +1,815 @@
+/* 
+=============================================
+HERO SECTION - PURPLE STARTUP THEME (V3)
+Design: Deep Purple Background, Teal/Lime Accents, Glassmorphism
+=============================================
+*/
+
+:root {
+    --startup-bg-purple: #5B3F86;
+    --startup-accent-lime: #4ADE80;
+    --startup-accent-teal: #2DD4BF;
+    --startup-card-bg: rgba(91, 63, 134, 0.4);
+    --startup-text-white: #ffffff;
+    --startup-text-dim: rgba(255, 255, 255, 0.8);
+}
+
+.hero-startup-section {
+    background-color: var(--startup-bg-purple);
+    background: linear-gradient(135deg, #5B3F86 0%, #452c6e 100%);
+    position: relative;
+    padding: 380px 0 100px;
+    /* Significantly increased top padding per user request */
+    overflow: hidden;
+    color: var(--startup-text-white);
+}
+
+/* Badge Style */
+.hero-startup-badge {
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--startup-accent-lime);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Typography */
+.hero-startup-title {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: var(--startup-text-white);
+}
+
+.hero-startup-title .highlight-teal {
+    color: var(--startup-accent-teal);
+}
+
+.hero-startup-subtitle {
+    font-size: 18px;
+    color: var(--startup-text-dim);
+    margin-bottom: 40px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.hero-startup-btn-primary {
+    background-color: var(--startup-accent-lime);
+    color: #1a1a1a;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 20px rgba(74, 222, 128, 0.2);
+}
+
+.hero-startup-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(74, 222, 128, 0.3);
+    color: #000;
+}
+
+.hero-startup-btn-secondary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--startup-text-white);
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.hero-startup-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--startup-text-white);
+    color: var(--startup-text-white);
+}
+
+/* Glassmorphic Card (Right Side) */
+.hero-startup-card-container {
+    position: relative;
+    padding: 20px;
+}
+
+.hero-startup-card {
+    background: var(--startup-card-bg);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.hero-startup-card img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card Footer Stats */
+.hero-startup-card-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.card-stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.card-stat-value {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--startup-accent-lime);
+}
+
+.card-stat-rating {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--startup-text-white);
+}
+
+.card-stat-rating i {
+    color: #FFD700;
+    /* Gold for star */
+}
+
+/* Floating Elements */
+.floating-element {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+    animation: float 6s ease-in-out infinite;
+}
+
+.floating-code {
+    top: -20px;
+    right: -20px;
+    width: 60px;
+    height: 60px;
+    background: #064e3b;
+    /* Dark Green */
+    color: var(--startup-accent-lime);
+    font-size: 24px;
+}
+
+.floating-network {
+    bottom: 40px;
+    left: -30px;
+    width: 50px;
+    height: 50px;
+    background: #022c22;
+    color: var(--startup-accent-teal);
+    font-size: 20px;
+    animation-delay: 2s;
+}
+
+.floating-scroll-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #4F46E5;
+    /* Indigo */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 99;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .hero-startup-section {
+        padding-top: 300px;
+        /* More space for tablet */
+    }
+
+    .hero-startup-title {
+        font-size: 48px;
+    }
+
+    .hero-startup-card-container {
+        margin-top: 50px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Adjust floating elements for tablet/mobile to prevent cut-off */
+    .floating-code {
+        right: -10px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .floating-network {
+        left: -10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-startup-section {
+        padding-top: 220px;
+        /* Verified Mobile Fix: Reduced but still spacious */
+        padding-bottom: 80px;
+        text-align: center;
+    }
+
+    .hero-startup-title {
+        font-size: 36px;
+        margin-top: 40px;
+        /* Verified Mobile Fix: Increased margin for separation */
+    }
+
+    .hero-startup-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .hero-startup-btn-secondary {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .hero-startup-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-startup-btn-primary,
+    .hero-startup-btn-secondary {
+        width: 100%;
+        justify-content: center;
+        max-width: 320px;
+        /* Prevent them from being comically wide */
+    }
+
+    /* Shrink floating elements further for mobile */
+    .floating-code {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        top: -10px;
+        right: 0;
+    }
+
+    .floating-network {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+        bottom: 20px;
+        left: 0;
+    }
+}
+
+
+/* 
+=============================================
+NAVBAR - PURPLE STARTUP THEME
+=============================================
+*/
+
+/* Overwrite Template Header Styles with High Specificity */
+/* Overwrite Template Header Styles with High Specificity */
+.main-header.main-header-three {
+    background: transparent !important;
+    /* Transparent outer header */
+    border-bottom: none !important;
+    padding-top: 20px !important;
+    /* Space from top */
+    position: absolute;
+    /* Float over hero */
+    width: 100%;
+    z-index: 999;
+}
+
+.main-menu-three {
+    padding: 0 !important;
+}
+
+/* Floating Box Container */
+.main-menu__wrapper {
+    background: rgba(30, 41, 59, 0.95) !important;
+    /* Dark Slate Box */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    /* Rounded corners */
+    margin: 0 auto !important;
+    /* Center the box */
+    max-width: 1200px;
+    /* Constrain width */
+    width: 95%;
+    /* Responsive width */
+    height: 80px;
+    /* SLightly tighter height */
+    padding: 0 30px !important;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. LOGO SECTION */
+.main-menu__left--two>.main-menu__logo {
+    padding: 0 !important;
+    margin: 0 !important;
+    flex: 0 0 auto;
+}
+
+/* Override inline styles on the wrapper div if necessary */
+.main-menu__left--two {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    /* Start, Center, End */
+}
+
+/* 2. CENTER NAVIGATION SECTION */
+/* Target the specific container box */
+.main-menu__left--two>.main-menu__main-menu-box--two {
+    margin: 0 !important;
+    /* Reset auto margins */
+    float: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    /* Grow to fill space */
+    width: auto !important;
+}
+
+.main-menu__main-menu-box--two .main-menu__list {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 40px !important;
+    width: auto !important;
+    background: transparent !important;
+}
+
+.main-menu__main-menu-box--two .main-menu__list>li {
+    padding: 0 !important;
+    margin: 0 !important;
+    /* strictly remove margins */
+    width: auto !important;
+    display: block !important;
+    float: none !important;
+}
+
+/* Main Link Style - ULTRA FORCE */
+.main-menu__main-menu-box--two .main-menu__list>li>a,
+.main-menu__main-menu-box--two .main-menu__list>li>a:link,
+.main-menu__main-menu-box--two .main-menu__list>li>a:visited {
+    color: #ffffff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    /* increased weight */
+    padding: 8px 0 !important;
+    transition: all 0.3s ease;
+    background: transparent !important;
+    opacity: 1 !important;
+    /* Force full opacity */
+    text-transform: none !important;
+    display: block;
+    text-decoration: none !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    /* Ensure contrast */
+    filter: none !important;
+    /* Remove any filters */
+}
+
+/* Specific override for Marketing & Forum link */
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="marketing-forum"],
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="marketing-forum"]:link,
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="marketing-forum"]:visited {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    background: transparent !important;
+}
+
+/* Force Transparent Background on Marketing & Forum Hover */
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="marketing-forum"]:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--startup-accent-teal) !important;
+}
+
+/* Specific override for Blog link */
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="blog"],
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="blog"]:link,
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="blog"]:visited {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    background: transparent !important;
+}
+
+/* Force Transparent Background on Blog Hover */
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="blog"]:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--startup-accent-teal) !important;
+}
+
+
+/* Hover & Active States */
+.main-menu__main-menu-box--two .main-menu__list>li.current>a,
+.main-menu__main-menu-box--two .main-menu__list>li:hover>a,
+.main-menu__main-menu-box--two .main-menu__list>li>a:hover,
+.main-menu__main-menu-box--two .main-menu__list>li>a:active,
+.main-menu__main-menu-box--two .main-menu__list>li>a:focus {
+    color: var(--startup-accent-teal) !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+}
+
+/* Remove default dots/decorations */
+.main-menu__list>li>a::before,
+.main-menu__list>li>a::after,
+.main-menu__list>li>a .main-menu-dot {
+    display: none !important;
+}
+
+/* Extra specificity for Marketing & Forum and Blog links */
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="marketing-forum"]:hover,
+.main-menu__main-menu-box--two .main-menu__list>li>a[href*="blog"]:hover,
+.main-menu__main-menu-box--two .main-menu__list>li:hover>a[href*="marketing-forum"],
+.main-menu__main-menu-box--two .main-menu__list>li:hover>a[href*="blog"] {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: var(--startup-accent-teal) !important;
+}
+
+/* NUCLEAR OPTION: Override ALL possible navbar hover backgrounds */
+.main-menu-three .main-menu__list>li:hover>a,
+.stricky-header.main-menu-three .main-menu__list>li:hover>a,
+.main-menu-three .main-menu__list>li>a:hover,
+.main-header-three .main-menu__list>li:hover>a,
+.main-header-three .main-menu__list>li>a:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* BLOG LINK: Remove all hover backgrounds to match other links */
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a:link,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a:visited,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a:hover,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a:active,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a:focus,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child:hover>a,
+.main-menu-three .main-menu__list>li:last-child>a,
+.main-menu-three .main-menu__list>li:last-child>a:hover,
+.main-menu-three .main-menu__list>li:last-child:hover>a,
+.stricky-header.main-menu-three .main-menu__list>li:last-child>a,
+.stricky-header.main-menu-three .main-menu__list>li:last-child>a:hover,
+.stricky-header.main-menu-three .main-menu__list>li:last-child:hover>a {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 8px 0 !important;
+    color: #ffffff !important;
+}
+
+.main-menu__main-menu-box--two .main-menu__list>li:last-child>a:hover,
+.main-menu__main-menu-box--two .main-menu__list>li:last-child:hover>a,
+.main-menu-three .main-menu__list>li:last-child>a:hover,
+.main-menu-three .main-menu__list>li:last-child:hover>a,
+.stricky-header.main-menu-three .main-menu__list>li:last-child>a:hover,
+.stricky-header.main-menu-three .main-menu__list>li:last-child:hover>a {
+    color: var(--startup-accent-teal) !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Ensure NO dropdown menu styles apply to main nav links */
+.main-menu__main-menu-box--two .main-menu__list>li:not(.megamenu) ul {
+    display: none !important;
+}
+
+/* Override any inherited background from parent li */
+.main-menu__main-menu-box--two .main-menu__list>li {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+.main-menu__main-menu-box--two .main-menu__list>li:hover {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* 3. RIGHT CTA SECTION */
+.main-menu__right-startup {
+    margin-left: auto;
+    /* Push to right */
+    flex: 0 0 auto;
+    z-index: 10;
+    /* Ensure clickable */
+}
+
+/* CTA Button */
+.hero-startup-btn-nav {
+    background-color: #2DD4BF !important;
+    /* Brand Teal (Logo Color) */
+    color: #1a1a1a !important;
+    /* Dark text on teal */
+    padding: 10px 20px;
+    border-radius: 6px;
+    /* Savio style: slightly rounded */
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
+    white-space: nowrap;
+}
+
+.hero-startup-btn-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(45, 212, 191, 0.5);
+    color: #000 !important;
+}
+
+/* Mobile Toggler */
+.mobile-nav__toggler {
+    color: white !important;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    display: none;
+    /* Hidden on desktop by default in this theme logic, handled by media query */
+}
+
+/* Responsive Navbar */
+@media (max-width: 991px) {
+    .main-menu__main-menu-box--two {
+        position: static !important;
+        transform: none !important;
+        justify-content: flex-end !important;
+        margin-left: auto !important;
+        width: 100% !important;
+        display: flex;
+    }
+
+    .mobile-nav__toggler {
+        display: block !important;
+        margin-left: auto;
+        cursor: pointer;
+        z-index: 100;
+        position: relative;
+    }
+
+    /* Hide the desktop menu list completely on mobile */
+    .main-menu__list {
+        display: none !important;
+    }
+
+    .main-menu__main-menu-box--two .main-menu__list {
+        display: none !important;
+    }
+
+    .main-menu__right-startup {
+        display: none !important;
+    }
+
+    .main-menu__wrapper {
+        padding: 0 20px !important;
+        height: 70px;
+    }
+
+    .main-menu__logo img {
+        max-height: 40px !important;
+    }
+
+    /* Fix for Mobile Sidebar Content Visibility */
+    .mobile-nav__container .main-menu__list {
+        display: block !important;
+        background: transparent !important;
+        margin: 20px 0 !important;
+    }
+
+    .mobile-nav__container .main-menu__list>li {
+        display: block !important;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .mobile-nav__container .main-menu__list>li>a {
+        padding: 15px 0 !important;
+        display: flex !important;
+        justify-content: space-between;
+        color: #ffffff !important;
+        opacity: 1 !important;
+    }
+
+    /* Fix Close Icon Position */
+    .mobile-nav__close {
+        position: absolute;
+        top: 20px !important;
+        right: 20px !important;
+        left: auto !important;
+        color: #ffffff !important;
+        cursor: pointer;
+        z-index: 999;
+    }
+}
+
+/* 
+=============================================
+STICKY HEADER - PURPLE STARTUP THEME
+=============================================
+*/
+
+
+.stricky-header.stricky-fixed {
+    position: fixed !important;
+    top: 20px !important;
+    /* Gap from top for floating look */
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 9999 !important;
+    background: transparent !important;
+    /* Transparent container */
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+    padding: 0 !important;
+    animation: slideDown 0.4s ease-in-out !important;
+    display: block !important;
+    pointer-events: none;
+    /* Allow clicks to pass through transparent areas */
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Ensure the wrapper becomes the visible 'Box' */
+.stricky-header .main-menu__wrapper {
+    background: rgba(30, 41, 59, 0.95) !important;
+    /* Dark Slate Box matching hero */
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2) !important;
+    width: 95% !important;
+    max-width: 1200px !important;
+    border-radius: 16px !important;
+    /* Rounded corners */
+    margin: 0 auto !important;
+    /* Center the box */
+    padding: 0 30px !important;
+    height: 80px !important;
+    pointer-events: auto;
+    /* Re-enable clicks inside the box */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+}
+
+/* Adjust links for the sticky state */
+.stricky-header .main-menu__list>li>a {
+    padding: 28px 0 !important;
+}
+
+/* Logo Sizing in Sticky */
+.stricky-header .main-menu__logo img {
+    max-height: 45px !important;
+}
+
+/* Ensure the nav button is visible */
+.stricky-header .main-menu__right-startup {
+    display: flex !important;
+}
+
+/* 
+=============================================
+RESPONSIVE STICKY HEADER
+=============================================
+*/
+
+@media (max-width: 991px) {
+    .stricky-header.stricky-fixed {
+        top: 20px !important;
+        /* Restore top gap for floating look */
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    .stricky-header .main-menu__wrapper {
+        width: 95% !important;
+        /* Floating width */
+        max-width: 100% !important;
+        border-radius: 16px !important;
+        /* Restore rounded corners */
+        margin: 0 auto !important;
+        /* Center it */
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        height: 70px !important;
+        /* Slightly shorter */
+        padding: 0 20px !important;
+        /* Reduce padding */
+        background: rgba(30, 41, 59, 0.95) !important;
+        /* Glassmorphic dark box */
+        backdrop-filter: blur(15px);
+    }
+
+    /* Ensure Logo resizing works */
+    .stricky-header .main-menu__logo img {
+        max-height: 35px !important;
+        /* Slightly smaller logo for mobile box */
+    }
+
+    /* Ensure Mobile Toggler is Visible and Positioned */
+    .stricky-header .mobile-nav__toggler {
+        display: block !important;
+        margin-left: auto;
+        color: white !important;
+        font-size: 24px;
+    }
+
+    /* Important: Do NOT hide the box wrapper, as it contains the toggler */
+    .stricky-header .main-menu__main-menu-box--two {
+        display: flex !important;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    /* Hide ONLY the list links in sticky mobile */
+    .stricky-header .main-menu__main-menu-box--two .main-menu__list,
+    .stricky-header .main-menu__right-startup {
+        display: none !important;
+    }
+}
